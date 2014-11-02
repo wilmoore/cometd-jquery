@@ -129,6 +129,10 @@
     {
         define(['jquery', 'org/cometd'], bind);
     }
+    if (typeof module != 'undefined')
+    {
+        module.exports = bind(require('jquery'), require('../org/cometd.js'));
+    }
     else
     {
         bind(jQuery, org.cometd);

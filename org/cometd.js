@@ -3274,3 +3274,8 @@ if (typeof define === 'function' && define.amd)
     });
 }
 
+if (typeof module != 'undefined')
+{
+    module.exports = org.cometd;
+}
+
